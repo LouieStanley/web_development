@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>to-do-list</title>
 </head>
 <body>
+    <h1>To-Do-List</h1>
     <input>
     <button onclick="add()">add</button>
     <ul id="list">
         <li>
-            hello<br>
+            hello
             <button onclick="deleteitem(event)">delete</button>
         </li>
     </ul>
@@ -20,7 +22,7 @@
             var list=document.getElementById("list")
             var li=document.createElement("li")
             var input=document.getElementsByTagName("input")
-            li.innerHTML=input[0].value+"<br><button onclick='deleteitem(event)'>delete</button>"
+            li.innerHTML=input[0].value+"<button onclick='deleteitem(event)'>delete</button>"
             list.append(li)
          }
          function deleteitem(event)
