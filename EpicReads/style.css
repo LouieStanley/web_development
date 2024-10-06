@@ -10,7 +10,8 @@ body {
 }
 
 .navbar {
-    background-color: #FD6569;
+    text-align: center;
+    background-color: gold;
     padding: 10px;
 }
 
@@ -27,32 +28,30 @@ body {
     margin: 30px;
     display: inline-block;
     vertical-align: top;
+    height: 250px;
+    position: relative;
 }
 
 .book-container h2 {
-    color: #FD6569;
+    color: gold;
 }
 
 .book-container button {
     color: black;
-    background-color: #FD6569;
+    background-color: gold;
     border-radius: 10px;
-    padding-top: 5px; 
-    padding-bottom: 5px; 
-    padding-left: 10px; 
-    padding-right: 10px; 
-    margin-top: 10px;
-    border: none;
+    padding: 5px 10px;
+    margin-top: auto;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
 }
 
 .add-button {
-    background-color: #FD6569;
+    background-color: gold;
     color: black;
     border-radius: 100%;
-    padding-top: 20px; 
-    padding-bottom: 20px; 
-    padding-left: 30px; 
-    padding-right: 30px; 
+    padding: 20px 30px;
     font-size: 40px;
     border: none;
     position: fixed;
@@ -73,7 +72,7 @@ body {
 }
 
 .pop-box {
-    background-color: #FD6569;
+    background-color: gold;
     width: 40%;
     padding: 40px;
     border-radius: 10px;
@@ -110,21 +109,42 @@ body {
 .pop-box input::placeholder {
     color: black;
 }
-.pop-box button{
-    background-color: black;
-    padding-left: 20px;
-    padding-right: 20px;
+
+.pop-box button {
+    background-color: #4CAF50;
+    padding: 10px 20px;
     border: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
     color: white;
     margin: 5px;
     border-radius: 5px;
-    
 }
-.pop-box input:focus{
+
+.pop-box button:hover {
+    background-color: #45a049;
+}
+
+.pop-box #cancle-popup {
+    background-color: #f44336;
+}
+
+.pop-box #cancle-popup:hover {
+    background-color: #d32f2f;
+}
+
+.pop-box input:focus {
     outline: none;
 }
-.pop-box textarea:focus{
+
+.pop-box textarea:focus {
     outline: none;
+}
+
+.book-container button:hover {
+    background-color: darkgoldenrod;
+    transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+    background-color: darkgoldenrod;
+    transition: background-color 0.3s ease;
 }

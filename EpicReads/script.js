@@ -26,9 +26,9 @@ addbook.addEventListener("click", function(event) {
     var div = document.createElement("div");
     div.setAttribute("class", "book-container");
     div.innerHTML = `<h2>${booktitle.value}</h2>
-                    <h5>${bookauthor.value}</h5>
-                    <p>${bookdescripition.value}</p>
-                    <button class="delete-book">Delete</button>`;
+                     <h5>${bookauthor.value}</h5>
+                     <p>${bookdescripition.value}</p>
+                     <button class="delete-book">Delete</button>`;
     container.append(div);
     popupoverlay.style.display = "none";
     popupbox.style.display = "none";
